@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/viewQuesadilla_textViewNumQuesadilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:text="Num Quesadilla: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/viewQuesadilla_textViewIngrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/viewQuesadilla_textViewNumQuesadilla"
+        android:layout_marginTop="5dp"
+        android:text="Ingrediente"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/viewQuesadilla_textViewSalsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewQuesadilla_textViewIngrediente"
+        android:layout_marginTop="5dp"
+        android:text="Salsa"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/viewQuesadilla_textViewQueso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Queso"
+            android:textColor="@android:color/black"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/quesadillas"
+        />
+
+</RelativeLayout>
